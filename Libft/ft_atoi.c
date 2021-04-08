@@ -6,36 +6,39 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 18:06:22 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 19:38:10 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/08 23:56:18 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** atoi tolerates some characters: tabs, return carrage, espaces, etc
+** These especial characters are: '\t', '\n', '\f', '\r' and space (' ')
+** Or in decimal notation: 9,10,11,12,13 and 32
+**  
+**
+*/
 
 #include "libft.h"
 
 int	ft_atoi(const char *s)
-{
-	int		neg;
+{	
+	int		sig;
 	long	num;
 
 	num = 0;
-	neg = 1;
-	while (*s == '\n' || *s == 32 || *s == 13
-		|| *s == 9 || *s == 11 || *s == 12)
+	sig = 1;
+	while ((*s >= 9 && *s <= 13) || *s == '\n' || *s == 32)
 		s++;
 	if (*s == '-' || *s == '+')
 	{
 		if (*s == '-')
-			neg = neg * -1;
+			sig = sig * -1;
 		s++;
 	}
 	while (*s >= '0' && *s <= '9')
 	{
 		num = (10 * num) + (*s - '0');
 		s++;
-		if ((neg * num) > 2147483647)
-			return (-1);
-		else if ((neg * num) < -2147483648)
-			return (0);
 	}
-	return (num * neg);
+	return (num * sig);
 }
