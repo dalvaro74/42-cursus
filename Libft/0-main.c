@@ -8,7 +8,8 @@ int main (void)
 
 	//char num[] = "9223372036854775807";
 	//int max_int = 2147483647;
-	//Range:: -9223372036854775808 to 9223372036854775807
+	//Range 64 bit sined:: -9223372036854775808 to 9223372036854775807
+	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcion.
 	char num[] = "-2147483650";
 	printf("%d\n", ft_atoi(num));
 	printf("%d\n", atoi(num));
