@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 18:06:22 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/08 23:56:18 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/09 00:54:38 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
 
 int	ft_atoi(const char *s)
 {	
-	int		sig;
-	long	num;
+	unsigned long long	num;
+	int					sig;
 
 	num = 0;
 	sig = 1;
-	while ((*s >= 9 && *s <= 13) || *s == '\n' || *s == 32)
+	while ((*s >= 9 && *s <= 13) || *s == 32)
 		s++;
 	if (*s == '-' || *s == '+')
 	{
@@ -39,6 +39,14 @@ int	ft_atoi(const char *s)
 	{
 		num = (10 * num) + (*s - '0');
 		s++;
+		
+		if ((num) > 9223372036854775807)
+		{
+			if (sig > 0)
+				return (-1);
+			else
+				return (0);	
+		}
 	}
 	return (num * sig);
 }
