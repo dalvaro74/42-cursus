@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:49:19 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/09 13:34:18 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/09 17:19:09 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
-	
+
 	ptr = b;
 	while (len-- > 0)
 		*ptr++ = c;
-	return (b);		
+	return (b);
 }

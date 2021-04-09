@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 18:06:22 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/09 00:54:38 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/09 17:11:20 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,14 @@
 */
 
 #include "libft.h"
+
+int	check_sig(int sig)
+{
+	if (sig > 0)
+		return (-1);
+	else
+		return (0);
+}
 
 int	ft_atoi(const char *s)
 {	
@@ -39,14 +47,8 @@ int	ft_atoi(const char *s)
 	{
 		num = (10 * num) + (*s - '0');
 		s++;
-		
 		if ((num) > 9223372036854775807)
-		{
-			if (sig > 0)
-				return (-1);
-			else
-				return (0);	
-		}
+			return (check_sig);
 	}
 	return (num * sig);
 }
