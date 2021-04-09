@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 19:41:49 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 20:23:10 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/09 13:51:39 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	unsigned char	*ptr;
 	
+	ptr = s;
+	while (n-- > 0)
+		*ptr++ = '\0';
 }
