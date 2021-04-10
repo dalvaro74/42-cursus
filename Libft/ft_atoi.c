@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 18:06:22 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/09 17:11:20 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/09 19:35:25 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_atoi(const char *s)
 		num = (10 * num) + (*s - '0');
 		s++;
 		if ((num) > 9223372036854775807)
-			return (check_sig);
+			return (check_sig(sig));
 	}
 	return (num * sig);
 }

@@ -10,9 +10,9 @@ int main (void)
 	//int max_int = 2147483647;
 	//Range 64 bit sined:: -9223372036854775808 to 9223372036854775807
 	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcionu
-	// char num[] = "-2147483650";
-	// printf("%d\n", ft_atoi(num));
-	// printf("%d\n", atoi(num));
+	char num[] = "-2147483650";
+	printf("%d\n", ft_atoi(num));
+	printf("%d\n", atoi(num));
 	
 	// ----- FT_MEMSET -----
 	
@@ -23,12 +23,12 @@ int main (void)
 
 	// ----- FT_BZERO -----
 
-	char	ptr[] = "hola pepito";
-	ft_bzero(ptr+2,3);
-	printf("%s\n", ptr);
-	char	ptr2[] = "hola pepito";
-	bzero(ptr2+2,3);
-	printf("%s\n", ptr2);
+	// char	ptr[] = "hola pepito";
+	// ft_bzero(ptr+2,3);
+	// printf("%s\n", ptr);
+	// char	ptr2[] = "hola pepito";
+	// bzero(ptr2+2,3);
+	// printf("%s\n", ptr2);
 
 	// ----- FT_MEMCPY -----
 

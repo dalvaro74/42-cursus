@@ -3,3 +3,5 @@
 .DS_Store
 *.o
 libft-unit-test/
+*.a
+*.so

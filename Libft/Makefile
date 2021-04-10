@@ -6,20 +6,23 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/07 20:15:52 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/10 14:19:57 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
 
-SRCS		=	ft_isalnum.c\
+SRCS		=	ft_atoi.c\
+				ft_memset.c\
+				ft_bzero.c\
+
+SRCS_2		=	ft_isalnum.c\
 				ft_isalpha.c\
 				ft_isdigit.c\
 				ft_isprint.c\
 				ft_isascii.c\
 				ft_toupper.c\
 				ft_tolower.c\
-				ft_atoi.c\
 				ft_strlen.c\
 				ft_strchr.c\
 				ft_strrchr.c\
@@ -27,8 +30,6 @@ SRCS		=	ft_isalnum.c\
 				ft_strlcpy.c\
 				ft_strlcat.c\
 				ft_strnstr.c\
-				ft_memset.c\
-				ft_bzero.c\
 				ft_memcpy.c\
 				ft_memccpy.c\
 				ft_memmove.c\
@@ -61,14 +62,13 @@ SRC_EXTRA	=	ft_lstnew.c\
 OBJS		= $(SRCS:.c=.o)
 CC			= cc
 RM			= rm -f
-#CFLAGS		= -Wall -Werror -Wextra
+CFLAGS		= -Wall -Werror -Wextra
 
 .c.o:
 	$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
-
+# Ponemos ar rcs en lugar de ar rc + ranlib
 $(NAME): 	$(OBJS)
-			ar rc  $(NAME) $(OBJS)
-			ranlib $(NAME)
+			ar rcs  $(NAME) $(OBJS)
 
 all:		$(NAME)
 
@@ -78,5 +78,10 @@ clean:
 fclean: 	clean
 			$(RM) $(NAME) 
 re:			fclean all
+
+# Se incluye para el tester libft-unit-test
+so:
+	$(CC) -fPIC -c $(CFLAGS) $(SRCS) 0-main.c
+	gcc -shared -o libft.so $(OBJS) 0-main.o
 
 .PHONY:		clean fclean all re b
