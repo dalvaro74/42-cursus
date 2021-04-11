@@ -34,31 +34,31 @@ int main (void)
 
 	// ----- FT_MEMCPY -----
 
-	// char a[] = "Hello World";
-	// char b[] = "World";
-	// printf("%s\n", memcpy(a, b, 8));
-	// printf("%s\n", ft_memcpy(a, b, 8));
+	// char dst[] = "abcdefgh";
+	// char src[] = "123466666666666";
+	// printf("%s\n", memcpy(dst, src, 6));
+	// printf("%s\n", ft_memcpy(dst, src, 6));
 
 
 	// ----- FT_MEMCCPY -----
 
-	// char a[] = "Hello World";
-	// char b[] = "Goodbye World";
-	// printf("%s\n", memccpy(a, b, 'd', 8));
-	// printf("%s\n", ft_memccpy(a, b, 'd', 8));
+	char a[] = "Hello World";
+	char b[] = "Goodbye World";
+	printf("%s\n", memccpy(a, b, 'd', 8));
+	printf("%s\n", ft_memccpy(a, b, 'd', 8));
 
 
 	// ----- FT_MEMMOVE -----
 
-	// char c[] = "Hello World";
-	// char d[] = "World";
-	// printf("%s\n", memmove(c, d, 8));
-	// printf("%s\n", ft_memmove(c, d, 8));
+	char c[] = "Hello World";
+	char d[] = "World";
+	printf("%s\n", memmove(c, d, 8));
+	printf("%s\n", ft_memmove(c, d, 8));
 
-	// char str[] = "memmove can be very useful......";
-    // char *str2 = str + 15;
-   	// ft_memcpy(str+20, str2, 11);
-    // printf ("%s\n", str);
+	char str[] = "memmove can be very useful......";
+    char *str2 = str + 15;
+   	ft_memcpy(str+20, str2, 11);
+    printf ("%s\n", str);
 
 
 	// ----- FT_MEMCHR -----
@@ -126,12 +126,12 @@ int main (void)
 
 	// ----- FT_STRNSTR -----
 
-	char	*largestring = "Foo Bar Baz";
-	char	*smallstring = "Bar";
-	//printf("%s\n", strnstr(largestring, smallstring, 3));
-	printf("%p\n", ft_strnstr(largestring, smallstring, 3));
-	printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", " ", 30));
-	printf("%p\n", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15));
+	// char	*largestring = "Foo Bar Baz";
+	// char	*smallstring = "Bar";
+	// printf("%s\n", strnstr(largestring, smallstring, 3));
+	// printf("%p\n", ft_strnstr(largestring, smallstring, 3));
+	// printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", " ", 30));
+	// printf("%p\n", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15));
 	
 	
 

@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/11 22:22:02 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/12 01:12:19 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,11 +29,11 @@ SRCS		=	ft_atoi.c\
 				ft_strlcpy.c\
 				ft_strlcat.c\
 				ft_strnstr.c\
-
-SRCS_2		=	ft_memcpy.c\
-				ft_memccpy.c\
+				ft_memcpy.c\
 				ft_memmove.c\
-				ft_memchr.c\
+				ft_memccpy.c\
+				
+SRCS_2		=	ft_memchr.c\
 				ft_memcmp.c\
 				ft_calloc.c\
 				ft_strdup.c
