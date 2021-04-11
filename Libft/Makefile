@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/11 13:14:26 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/11 14:16:37 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,11 @@ NAME		= libft.a
 SRCS		=	ft_atoi.c\
 				ft_memset.c\
 				ft_bzero.c\
-
-SRCS_2		=	ft_isalnum.c\
 				ft_isalpha.c\
 				ft_isdigit.c\
-				ft_isprint.c\
+				ft_isalnum.c\
+
+SRCS_2		=	ft_isprint.c\
 				ft_isascii.c\
 				ft_toupper.c\
 				ft_tolower.c\

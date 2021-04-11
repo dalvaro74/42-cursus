@@ -6,13 +6,13 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:40:06 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 20:40:57 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/11 14:17:32 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-	
+	return (c >= 48 && c <= 57);
 }

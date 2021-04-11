@@ -1,5 +1,6 @@
 #include "libft.h"
 #include <stdlib.h>
+#include <ctype.h>
 
 int main (void)
 {
@@ -10,9 +11,9 @@ int main (void)
 	//int max_int = 2147483647;
 	//Range 64 bit sined:: -9223372036854775808 to 9223372036854775807
 	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcionu
-	char num[] = "-2147483650";
-	printf("%d\n", ft_atoi(num));
-	printf("%d\n", atoi(num));
+	// char num[] = "-2147483650";
+	// printf("%d\n", ft_atoi(num));
+	// printf("%d\n", atoi(num));
 	
 	// ----- FT_MEMSET -----
 	
@@ -126,20 +127,20 @@ int main (void)
 	
 	// ***** FT_ISALPHA -----
 
-	// printf("%d\n", isalpha(122));	
-	// printf("%d\n", ft_isalpha(122));
+	printf("%i\n", isalpha(100));	
+	printf("%i\n", ft_isalpha(100));
 
 
 	// ----- FT_ISDIGIT -----
 	
-	// printf("%d\n", isdigit('e'));	
-	// printf("%d\n", ft_isdigit('e'));
+	printf("%d\n", isdigit('9'));	
+	printf("%d\n", ft_isdigit('9'));
 
 
 	// ----- FT_ISALNUM -----
 
-	// printf("%d\n", isalnum(' '));	
-	// printf("%d\n", ft_isalnum(' '));
+	printf("%d\n", isalnum(' '));	
+	printf("%d\n", ft_isalnum(' '));
 
 
 	// ----- FT_ISASCII -----
