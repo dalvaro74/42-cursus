@@ -1,6 +1,7 @@
 #include "libft.h"
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 int main (void)
 {
@@ -99,36 +100,39 @@ int main (void)
 
 	// ----- FT_STRCHR -----
 
-	printf("%p\n", strchr("HAOLAOXXX", '\0'));
-	printf("%p\n", ft_strchr("HAOLAOXXX", '\0'));
-	printf("%p\n", strchr("HAOLAOXXX", ' '));
-	printf("%p\n", ft_strchr("HAOLAOXXX", ' '));
-	printf("%s\n", strchr("bonjour", 'b'));
-	printf("%s\n", ft_strchr("bonjour", 'b'));
-	printf("%s\n", strchr("HAOLAOXXX", 'O'));
-	printf("%s\n", ft_strchr("HAOLAOXXX", 'O'));
-	printf("%p\n", strchr("tripouille", 372));
-	printf("%p\n", ft_strchr("tripouille", 372));
-	printf("%c\n", 256);
+	// printf("%p\n", strchr("HAOLAOXXX", '\0'));
+	// printf("%p\n", ft_strchr("HAOLAOXXX", '\0'));
+	// printf("%p\n", strchr("HAOLAOXXX", ' '));
+	// printf("%p\n", ft_strchr("HAOLAOXXX", ' '));
+	// printf("%s\n", strchr("bonjour", 'b'));
+	// printf("%s\n", ft_strchr("bonjour", 'b'));
+	// printf("%s\n", strchr("HAOLAOXXX", 'O'));
+	// printf("%s\n", ft_strchr("HAOLAOXXX", 'O'));
+	// printf("%p\n", strchr("tripouille", 372));
+	// printf("%p\n", ft_strchr("tripouille", 372));
+	// printf("%c\n", 256);
 
 
 	// ----- FT_STRRCHR -----
-	printf("%p\n", strrchr("HAOLAOXXX", '\0'));
-	printf("%p\n", ft_strrchr("HAOLAOXXX", '\0'));
-	printf("%p\n", strrchr("HAOLAOXXX", ' '));
-	printf("%p\n", ft_strrchr("HAOLAOXXX", ' '));
-	printf("%s\n", strrchr("HAOLAOXXX", 'O'));
-	printf("%s\n", ft_strrchr("HAOLAOXXX", 'O'));
-	printf("%s\n", strrchr("bonjour", 'b'));
-	printf("%s\n", ft_strrchr("bonjour", 'b'));
+	// printf("%p\n", strrchr("HAOLAOXXX", '\0'));
+	// printf("%p\n", ft_strrchr("HAOLAOXXX", '\0'));
+	// printf("%p\n", strrchr("HAOLAOXXX", ' '));
+	// printf("%p\n", ft_strrchr("HAOLAOXXX", ' '));
+	// printf("%s\n", strrchr("HAOLAOXXX", 'O'));
+	// printf("%s\n", ft_strrchr("HAOLAOXXX", 'O'));
+	// printf("%s\n", strrchr("bonjour", 'b'));
+	// printf("%s\n", ft_strrchr("bonjour", 'b'));
 
 
 	// ----- FT_STRNSTR -----
 
-	// char	*largestring = "Foo Bar Baz";
-	// char	*smallstring = "Bar";
-	// printf("%s\n", strnstr(largestring, smallstring, 3));
-	// printf("%s\n", ft_strnstr(largestring, smallstring, 3));
+	char	*largestring = "Foo Bar Baz";
+	char	*smallstring = "Bar";
+	//printf("%s\n", strnstr(largestring, smallstring, 3));
+	printf("%p\n", ft_strnstr(largestring, smallstring, 3));
+	printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", " ", 30));
+	printf("%p\n", ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15));
+	
 	
 
 	// ----- FT_STRNCMP -----
