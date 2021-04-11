@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:53:29 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 20:54:00 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/11 21:40:52 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	
+	while (*s != (char)c)
+	{
+		if (*s == '\0')
+			return (NULL);
+		s++;
+	}
+	return ((char *)s);
 }

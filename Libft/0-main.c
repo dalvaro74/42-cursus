@@ -76,8 +76,8 @@ int main (void)
 
 	// ----- FT_STRLEN -----
 
-	// printf("%lu\n", strlen("HOLA"));
-	// printf("%lu\n", ft_strlen("HOLA"));
+	// printf("%lu\n", strlen(""));
+	// printf("%lu\n", ft_strlen(""));
 
 
 	// ----- FT_STRLCPY -----
@@ -99,14 +99,28 @@ int main (void)
 
 	// ----- FT_STRCHR -----
 
-	// printf("%s\n", strchr("HAOLA", 65));
-	// printf("%s\n", ft_strchr("HAOLA", 65));
+	printf("%p\n", strchr("HAOLAOXXX", '\0'));
+	printf("%p\n", ft_strchr("HAOLAOXXX", '\0'));
+	printf("%p\n", strchr("HAOLAOXXX", ' '));
+	printf("%p\n", ft_strchr("HAOLAOXXX", ' '));
+	printf("%s\n", strchr("bonjour", 'b'));
+	printf("%s\n", ft_strchr("bonjour", 'b'));
+	printf("%s\n", strchr("HAOLAOXXX", 'O'));
+	printf("%s\n", ft_strchr("HAOLAOXXX", 'O'));
+	printf("%p\n", strchr("tripouille", 372));
+	printf("%p\n", ft_strchr("tripouille", 372));
+	printf("%c\n", 256);
 
 
 	// ----- FT_STRRCHR -----
-
-	// printf("%s\n", strrchr("AHOLA", 65));
-	// printf("%s\n", ft_strrchr("AHOLA", 65));
+	printf("%p\n", strrchr("HAOLAOXXX", '\0'));
+	printf("%p\n", ft_strrchr("HAOLAOXXX", '\0'));
+	printf("%p\n", strrchr("HAOLAOXXX", ' '));
+	printf("%p\n", ft_strrchr("HAOLAOXXX", ' '));
+	printf("%s\n", strrchr("HAOLAOXXX", 'O'));
+	printf("%s\n", ft_strrchr("HAOLAOXXX", 'O'));
+	printf("%s\n", strrchr("bonjour", 'b'));
+	printf("%s\n", ft_strrchr("bonjour", 'b'));
 
 
 	// ----- FT_STRNSTR -----
@@ -119,10 +133,10 @@ int main (void)
 
 	// ----- FT_STRNCMP -----
 
-	// char h[] = "aaa bbb kkk";
-	// char p[] = "aaa zzz kkk";
-	// printf("%d\n", strncmp(h, p, 9));
-	// printf("%d\n", ft_strncmp(h, p, 9));
+	// char h[] = "test\200";
+	// char p[] = "test\0";
+	// printf("%d\n", strncmp(h, p, 6));
+	// printf("%d\n", ft_strncmp(h, p, 6));
 	
 	
 	// ***** FT_ISALPHA -----
@@ -157,12 +171,12 @@ int main (void)
 
 	// ----- FT_TOUPPER -----
 
-	printf("%c\n", toupper('@'));	
-	printf("%c\n", ft_toupper('@'));
+	// printf("%c\n", toupper('@'));	
+	// printf("%c\n", ft_toupper('@'));
 
 	
 	// ----- FT_TOLOWER -----
 
-	printf("%c\n", tolower('Z'));	
-	printf("%c\n", ft_tolower('Z'));		
+// 	printf("%c\n", tolower('Z'));	
+// 	printf("%c\n", ft_tolower('Z'));		
 }
