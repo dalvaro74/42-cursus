@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/10 14:19:57 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/11 13:14:26 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,9 +64,13 @@ CC			= cc
 RM			= rm -f
 CFLAGS		= -Wall -Werror -Wextra
 
-.c.o:
-	$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
-# Ponemos ar rcs en lugar de ar rc + ranlib
+# Change this Old-Fashioned Suffix Rules for the current on
+#.c.o:
+#	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+%.o: %.c
+	$(CC) -c $(CFLAGS) $< -o $@
+
+# Use  "ar rcs" instead of "ar rc + ranlib"
 $(NAME): 	$(OBJS)
 			ar rcs  $(NAME) $(OBJS)
 
@@ -76,12 +80,13 @@ clean:
 			${RM} ${OBJS}
 
 fclean: 	clean
-			$(RM) $(NAME) 
+			$(RM) $(NAME)
+			
 re:			fclean all
 
-# Se incluye para el tester libft-unit-test
+# We need include this target for libft-unit-test Tester
 so:
 	$(CC) -fPIC -c $(CFLAGS) $(SRCS) 0-main.c
 	gcc -shared -o libft.so $(OBJS) 0-main.o
 
-.PHONY:		clean fclean all re b
+.PHONY:		clean fclean all re
