@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/11 17:27:26 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/11 17:41:32 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,10 +20,10 @@ SRCS		=	ft_atoi.c\
 				ft_isalnum.c\
 				ft_isprint.c\
 				ft_isascii.c\
-
-SRCS_2		=	ft_toupper.c\
+				ft_toupper.c\
 				ft_tolower.c\
-				ft_strlen.c\
+
+SRCS_2		=	ft_strlen.c\
 				ft_strchr.c\
 				ft_strrchr.c\
 				ft_strncmp.c\

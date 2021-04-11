@@ -6,13 +6,15 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 21:05:19 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 21:05:57 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/11 17:40:23 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
 }

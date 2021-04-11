@@ -157,12 +157,12 @@ int main (void)
 
 	// ----- FT_TOUPPER -----
 
-	// printf("%d\n", toupper('E'));	
-	// printf("%d\n", ft_toupper('E'));
+	printf("%c\n", toupper('@'));	
+	printf("%c\n", ft_toupper('@'));
 
 	
 	// ----- FT_TOLOWER -----
 
-	// printf("%d\n", tolower('Z'));	
-	// printf("%d\n", ft_tolower('Z'));		
+	printf("%c\n", tolower('Z'));	
+	printf("%c\n", ft_tolower('Z'));		
 }
