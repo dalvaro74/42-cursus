@@ -127,20 +127,20 @@ int main (void)
 	
 	// ***** FT_ISALPHA -----
 
-	printf("%i\n", isalpha(100));	
-	printf("%i\n", ft_isalpha(100));
+	// printf("%i\n", isalpha(100));	
+	// printf("%i\n", ft_isalpha(100));
 
 
 	// ----- FT_ISDIGIT -----
 	
-	printf("%d\n", isdigit('9'));	
-	printf("%d\n", ft_isdigit('9'));
+	// printf("%d\n", isdigit('9'));	
+	// printf("%d\n", ft_isdigit('9'));
 
 
 	// ----- FT_ISALNUM -----
 
-	printf("%d\n", isalnum(' '));	
-	printf("%d\n", ft_isalnum(' '));
+	// printf("%d\n", isalnum(' '));	
+	// printf("%d\n", ft_isalnum(' '));
 
 
 	// ----- FT_ISASCII -----

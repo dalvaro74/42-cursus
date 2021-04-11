@@ -6,13 +6,13 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:40:29 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/07 20:40:46 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/11 17:31:42 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
-	
+	return (c >= 32 && c <= 126);
 }
