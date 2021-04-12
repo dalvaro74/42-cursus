@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/12 02:32:57 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/12 02:40:10 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,7 @@ CC			= cc
 RM			= rm -f
 CFLAGS		= -Wall -Werror -Wextra
 
-# Change this Old-Fashioned Suffix Rules for the current on
+# Change this Old-Fashioned Suffix Rules for the current one
 #.c.o:
 #	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 %.o: %.c
