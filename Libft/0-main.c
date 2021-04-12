@@ -10,8 +10,8 @@ int main (void)
 	//Range 64 bit signed:: -9223372036854775808 to 9223372036854775807
 	//Range int:: -2147483648 to 2147483647
 	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcion
-	char num[] = "-9223372030000";
-	char num2[] = "9223372030000";
+	char num[] = "-922337203685477580999";
+	char num2[] = "922337203685477580888";
 	printf("%d\n", ft_atoi(num));
 	printf("%d\n", atoi(num));
 	printf("%d\n", ft_atoi(num2));
