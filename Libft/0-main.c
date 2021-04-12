@@ -69,16 +69,16 @@ int main (void)
 
 	// ----- FT_MEMCMP -----
 	
-	char h[] = "zzz bbb kkk";
-	char p[] = "aaa bbb kkk";
-	printf("%d\n", memcmp(h, p, 9));
-	printf("%d\n", ft_memcmp(h, p, 9));
-	char s[] = {-128, 0, 127, 0};
-	char sCpy[] = {-128, 0, 127, 0};
-	char s2[] = {0, 0, 127, 0};
-	char s3[] = {0, 0, 42, 0};
-	printf("%d\n", memcmp(s2, s3, 3));
-	printf("%d\n", ft_memcmp(s2, s3, 3));
+	// char h[] = "zzz bbb kkk";
+	// char p[] = "aaa bbb kkk";
+	// printf("%d\n", memcmp(h, p, 9));
+	// printf("%d\n", ft_memcmp(h, p, 9));
+	// char s[] = {-128, 0, 127, 0};
+	// char sCpy[] = {-128, 0, 127, 0};
+	// char s2[] = {0, 0, 127, 0};
+	// char s3[] = {0, 0, 42, 0};
+	// printf("%d\n", memcmp(s2, s3, 3));
+	// printf("%d\n", ft_memcmp(s2, s3, 3));
 	
 
 	// ----- FT_STRLEN -----
