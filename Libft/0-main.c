@@ -7,14 +7,15 @@ int main (void)
 {
 	
 	// ----- FT_ATOI -----
-
-	//char num[] = "9223372036854775807";
-	//int max_int = 2147483647;
-	//Range 64 bit sined:: -9223372036854775808 to 9223372036854775807
-	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcionu
-	// char num[] = "-2147483650";
-	// printf("%d\n", ft_atoi(num));
-	// printf("%d\n", atoi(num));
+	//Range 64 bit signed:: -9223372036854775808 to 9223372036854775807
+	//Range int:: -2147483648 to 2147483647
+	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcion
+	char num[] = "-9223372030000";
+	char num2[] = "9223372030000";
+	printf("%d\n", ft_atoi(num));
+	printf("%d\n", atoi(num));
+	printf("%d\n", ft_atoi(num2));
+	printf("%d\n", atoi(num2));
 	
 	// ----- FT_MEMSET -----
 	
