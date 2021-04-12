@@ -42,23 +42,23 @@ int main (void)
 
 	// ----- FT_MEMCCPY -----
 
-	char a[] = "Hello World";
-	char b[] = "Goodbye World";
-	printf("%s\n", memccpy(a, b, 'd', 8));
-	printf("%s\n", ft_memccpy(a, b, 'd', 8));
+	// char a[] = "Hello World";
+	// char b[] = "Goodbye World";
+	// printf("%s\n", memccpy(a, b, 'd', 8));
+	// printf("%s\n", ft_memccpy(a, b, 'd', 8));
 
 
 	// ----- FT_MEMMOVE -----
 
-	char c[] = "Hello World";
-	char d[] = "World";
-	printf("%s\n", memmove(c, d, 8));
-	printf("%s\n", ft_memmove(c, d, 8));
+	// char c[] = "Hello World";
+	// char d[] = "World";
+	// printf("%s\n", memmove(c, d, 8));
+	// printf("%s\n", ft_memmove(c, d, 8));
 
-	char str[] = "memmove can be very useful......";
-    char *str2 = str + 15;
-   	ft_memcpy(str+20, str2, 11);
-    printf ("%s\n", str);
+	// char str[] = "memmove can be very useful......";
+    // char *str2 = str + 15;
+   	// ft_memcpy(str+20, str2, 11);
+    // printf ("%s\n", str);
 
 
 	// ----- FT_MEMCHR -----
@@ -69,10 +69,16 @@ int main (void)
 
 	// ----- FT_MEMCMP -----
 	
-	// char h[] = "zzz bbb kkk";
-	// char p[] = "aaa bbb kkk";
-	// printf("%d\n", memcmp(h, p, 9));
-	// printf("%d\n", ft_memcmp(h, p, 9));
+	char h[] = "zzz bbb kkk";
+	char p[] = "aaa bbb kkk";
+	printf("%d\n", memcmp(h, p, 9));
+	printf("%d\n", ft_memcmp(h, p, 9));
+	char s[] = {-128, 0, 127, 0};
+	char sCpy[] = {-128, 0, 127, 0};
+	char s2[] = {0, 0, 127, 0};
+	char s3[] = {0, 0, 42, 0};
+	printf("%d\n", memcmp(s2, s3, 3));
+	printf("%d\n", ft_memcmp(s2, s3, 3));
 	
 
 	// ----- FT_STRLEN -----
