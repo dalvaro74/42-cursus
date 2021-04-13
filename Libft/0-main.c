@@ -39,6 +39,29 @@ int main (void)
 	// char src[] = "123466666666666";
 	// printf("%s\n", memcpy(dst, src, 6));
 	// printf("%s\n", ft_memcpy(dst, src, 6));
+	// printf("%s\n", memcpy(dest, src, 8));
+	// printf("%s\n", ft_memcpy(dest, src, 8));
+	// printf("%s\n", memcpy(src, dest, 8));
+	// printf("%s\n", ft_memcpy(src, dest, 8));
+
+	// ----- FT_MEMMOVE -----
+
+	// char c[] = "Hello World";
+	// char d[] = "World";
+	// printf("%s\n", memmove(c, d, 8));
+	// printf("%s\n", ft_memmove(c, d, 8));
+
+	char	src[] = "lorem ipsum dolor sit amet";
+	char	*dest;
+	dest = src + 1;
+	printf("%s\n", memmove(dest, src, 8));
+	printf("%s\n", memmove(src, dest, 8));
+	char	src2[] = "lorem ipsum dolor sit amet";
+	char	*dest2;
+	dest2 = src2 + 1;
+	printf("%s\n", ft_memmove(dest2, src2, 8));
+	printf("%s\n", ft_memmove(src2, dest2, 8));
+	
 
 
 	// ----- FT_MEMCCPY -----
@@ -48,16 +71,6 @@ int main (void)
 	// printf("%s\n", memccpy(a, b, 'd', 8));
 	// printf("%s\n", ft_memccpy(a, b, 'd', 8));
 
-
-	// ----- FT_MEMMOVE -----
-
-	// char c[] = "Hello World";
-	// char d[] = "World";
-	// printf("%s\n", memmove(c, d, 8));
-	// printf("%s\n", ft_memmove(c, d, 8));
-	char	src[] = "lorem ipsum dolor sit amet";
-	char	*dest;
-	dest = src + 1;
 
 	// ----- FT_MEMCCPY -----
 	// char str[] = "memmove can be very useful......";
@@ -108,6 +121,24 @@ int main (void)
 	// printf("longitud función original: %lu\n", strlcat(dest, src, 100));
 	// printf("longitud función mía: %lu\n", ft_strlcat(dest, src, 0));
 	// printf("%s\n", dest);
+	printf("\n");
+	char	*dest3;
+	if (!(dest3 = (char *)malloc(sizeof(*dest3) * 15)))
+		return (0);
+	memset(dest3, 0, 15);
+	memset(dest3, 'r', 6);
+	memset(dest3, 'r', 15);
+	printf("longitud función original: %lu\n", strlcat(dest3, "lorem ipsum dolor sit amet", 5));
+	printf("%s\n", dest3);
+
+	char	*dest4;
+	if (!(dest4 = (char *)malloc(sizeof(*dest4) * 15)))
+		return (0);
+	memset(dest4, 0, 15);
+	memset(dest4, 'r', 6);
+	memset(dest4, 'r', 15);
+	printf("longitud función mía: %lu\n", ft_strlcat(dest4, "lorem ipsum dolor sit amet", 5));
+	printf("%s\n", dest4);
 
 
 	// ----- FT_STRCHR -----

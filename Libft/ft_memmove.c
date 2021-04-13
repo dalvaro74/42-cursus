@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:47:51 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/13 15:52:33 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/13 17:28:39 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (NULL);
 	end_dst = dst;
 	end_src = src;
-	if (src > dst)
-		return (memcpy(dst, src, len));
-	else
+	if (src < dst)
 		while (len--)
 			end_dst[len] = end_src[len];
+	else
+		ft_memcpy(end_dst, end_src, len);
 	return (dst);
 }

@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:57:06 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/11 22:19:40 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/13 18:27:24 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	buffer = 0;
+	if (!dst || !src)
+		return (0);
 	if (dstsize == 0)
 		return (ft_strlen(src));
 	while (src[buffer] != '\0')

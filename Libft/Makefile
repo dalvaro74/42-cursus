@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/12 02:40:10 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/13 18:52:05 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,8 @@ SRCS		=	ft_atoi.c\
 				ft_memchr.c\
 				ft_memcmp.c\
 				ft_calloc.c\
-				ft_strdup.c
+				ft_strdup.c\
+				ft_putchar_fd.c\
 
 SRC_ADD		=	ft_substr.c\
 				ft_strjoin.c\
@@ -43,7 +44,6 @@ SRC_ADD		=	ft_substr.c\
 				ft_split.c\
 				ft_itoa.c\
 				ft_strmapi.c\
-				ft_putchar_fd.c\
 				ft_putstr_fd.c\
 				ft_putendl_fd.c\
 				ft_putnbr_fd.c
@@ -64,10 +64,10 @@ RM			= rm -f
 CFLAGS		= -Wall -Werror -Wextra
 
 # Change this Old-Fashioned Suffix Rules for the current one
-#.c.o:
-#	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
-%.o: %.c
-	$(CC) -c $(CFLAGS) $< -o $@
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+#%.o: %.c
+#	$(CC) -c $(CFLAGS) $< -o $@
 
 # Use  "ar rcs" instead of "ar rc + ranlib"
 $(NAME): 	$(OBJS)
