@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/13 19:55:47 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/13 20:57:34 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,9 +40,9 @@ SRCS		=	ft_atoi.c\
 				ft_putstr_fd.c\
 				ft_putendl_fd.c\
 				ft_putnbr_fd.c\
+				ft_substr.c\
 
-SRC_ADD		=	ft_substr.c\
-				ft_strjoin.c\
+SRC_ADD		=	ft_strjoin.c\
 				ft_strtrim.c\
 				ft_split.c\
 				ft_itoa.c\

@@ -6,6 +6,11 @@
 int main (void)
 {
 	
+	char * s = ft_substr("tripouille", 0, 42000);
+	printf("%s\n",s);
+	//mcheck(s, strlen("tripouille") + 1); free(s); showLeaks();
+
+
 	// ----- FT_ATOI -----
 	//Range 64 bit signed:: -9223372036854775808 to 9223372036854775807
 	//Range int:: -2147483648 to 2147483647
@@ -51,16 +56,16 @@ int main (void)
 	// printf("%s\n", memmove(c, d, 8));
 	// printf("%s\n", ft_memmove(c, d, 8));
 
-	char	src[] = "lorem ipsum dolor sit amet";
-	char	*dest;
-	dest = src + 1;
-	printf("%s\n", memmove(dest, src, 8));
-	printf("%s\n", memmove(src, dest, 8));
-	char	src2[] = "lorem ipsum dolor sit amet";
-	char	*dest2;
-	dest2 = src2 + 1;
-	printf("%s\n", ft_memmove(dest2, src2, 8));
-	printf("%s\n", ft_memmove(src2, dest2, 8));
+	// char	src[] = "lorem ipsum dolor sit amet";
+	// char	*dest;
+	// dest = src + 1;
+	// printf("%s\n", memmove(dest, src, 8));
+	// printf("%s\n", memmove(src, dest, 8));
+	// char	src2[] = "lorem ipsum dolor sit amet";
+	// char	*dest2;
+	// dest2 = src2 + 1;
+	// printf("%s\n", ft_memmove(dest2, src2, 8));
+	// printf("%s\n", ft_memmove(src2, dest2, 8));
 	
 
 
@@ -121,24 +126,24 @@ int main (void)
 	// printf("longitud función original: %lu\n", strlcat(dest, src, 100));
 	// printf("longitud función mía: %lu\n", ft_strlcat(dest, src, 0));
 	// printf("%s\n", dest);
-	printf("\n");
-	char	*dest3;
-	if (!(dest3 = (char *)malloc(sizeof(*dest3) * 15)))
-		return (0);
-	memset(dest3, 0, 15);
-	memset(dest3, 'r', 6);
-	memset(dest3, 'r', 15);
-	printf("longitud función original: %lu\n", strlcat(dest3, "lorem ipsum dolor sit amet", 5));
-	printf("%s\n", dest3);
+	// printf("\n");
+	// char	*dest3;
+	// if (!(dest3 = (char *)malloc(sizeof(*dest3) * 15)))
+	// 	return (0);
+	// memset(dest3, 0, 15);
+	// memset(dest3, 'r', 6);
+	// memset(dest3, 'r', 15);
+	// printf("longitud función original: %lu\n", strlcat(dest3, "lorem ipsum dolor sit amet", 5));
+	// printf("%s\n", dest3);
 
-	char	*dest4;
-	if (!(dest4 = (char *)malloc(sizeof(*dest4) * 15)))
-		return (0);
-	memset(dest4, 0, 15);
-	memset(dest4, 'r', 6);
-	memset(dest4, 'r', 15);
-	printf("longitud función mía: %lu\n", ft_strlcat(dest4, "lorem ipsum dolor sit amet", 5));
-	printf("%s\n", dest4);
+	// char	*dest4;
+	// if (!(dest4 = (char *)malloc(sizeof(*dest4) * 15)))
+	// 	return (0);
+	// memset(dest4, 0, 15);
+	// memset(dest4, 'r', 6);
+	// memset(dest4, 'r', 15);
+	// printf("longitud función mía: %lu\n", ft_strlcat(dest4, "lorem ipsum dolor sit amet", 5));
+	// printf("%s\n", dest4);
 
 
 	// ----- FT_STRCHR -----
