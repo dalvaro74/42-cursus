@@ -10,12 +10,12 @@ int main (void)
 	//Range 64 bit signed:: -9223372036854775808 to 9223372036854775807
 	//Range int:: -2147483648 to 2147483647
 	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcion
-	char num[] = "-922337203685477580999";
-	char num2[] = "922337203685477580888";
-	printf("%d\n", ft_atoi(num));
-	printf("%d\n", atoi(num));
-	printf("%d\n", ft_atoi(num2));
-	printf("%d\n", atoi(num2));
+	// char num[] = "-922337203685477580999";
+	// char num2[] = "922337203685477580888";
+	// printf("%d\n", ft_atoi(num));
+	// printf("%d\n", atoi(num));
+	// printf("%d\n", ft_atoi(num2));
+	// printf("%d\n", atoi(num2));
 	
 	// ----- FT_MEMSET -----
 	
@@ -55,11 +55,16 @@ int main (void)
 	// char d[] = "World";
 	// printf("%s\n", memmove(c, d, 8));
 	// printf("%s\n", ft_memmove(c, d, 8));
+	char	src[] = "lorem ipsum dolor sit amet";
+	char	*dest;
+	dest = src + 1;
 
+	// ----- FT_MEMCCPY -----
 	// char str[] = "memmove can be very useful......";
     // char *str2 = str + 15;
    	// ft_memcpy(str+20, str2, 11);
     // printf ("%s\n", str);
+	
 
 
 	// ----- FT_MEMCHR -----
