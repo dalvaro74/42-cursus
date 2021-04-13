@@ -6,7 +6,7 @@
 int main (void)
 {
 	
-	char * s = ft_substr("tripouille", 0, 42000);
+	char * s = ft_substr("tripouille", 1, 10);
 	printf("%s\n",s);
 	//mcheck(s, strlen("tripouille") + 1); free(s); showLeaks();
 
