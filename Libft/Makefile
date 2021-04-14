@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/14 18:17:57 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/14 20:48:38 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,11 +43,11 @@ SRCS		=	ft_atoi.c\
 				ft_substr.c\
 				ft_strjoin.c\
 				ft_strtrim.c\
+				ft_strmapi.c\
 
 SRC_ADD		=	ft_split.c\
 				ft_itoa.c\
-				ft_strmapi.c\
-
+				
 SRC_EXTRA	=	ft_lstnew.c\
 				ft_lstadd_front.c\
 				ft_lstsize.c\

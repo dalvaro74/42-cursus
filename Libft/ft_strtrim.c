@@ -6,7 +6,7 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 21:03:35 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/14 20:02:53 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/14 20:49:19 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 		init++;
 	while (ft_strchr(set, s1[finish]) && finish > init)
 		finish--;
-	len = finish - init;
 	ptr = ft_substr(s1, (unsigned int)init, (finish - init) + 1);
 	return (ptr);
 }
