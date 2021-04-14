@@ -5,9 +5,17 @@
 
 int main (void)
 {
-	
-	char * s = ft_substr("tripouille", 1, 10);
-	printf("%s\n",s);
+	// ----- FT_STRTRIM -----
+	char	s1[] = "ababyaba";
+	char	set[] = "ab";
+	printf("%s\n", ft_strtrim(s1,set));
+
+	char	s2[] = "1234567";
+	printf("%s\n", ft_substr(s2,6,0));
+
+	printf("%zu\n", ft_strlen("\0"));
+
+
 	//mcheck(s, strlen("tripouille") + 1); free(s); showLeaks();
 
 
@@ -15,7 +23,7 @@ int main (void)
 	//Range 64 bit signed:: -9223372036854775808 to 9223372036854775807
 	//Range int:: -2147483648 to 2147483647
 	//Estos eran los numeros a partir de los cuales daban cosas distintas el atoi y mi funcion
-	// char num[] = "-922337203685477580999";
+	// char num[] = "-92233720368547758099";
 	// char num2[] = "922337203685477580888";
 	// printf("%d\n", ft_atoi(num));
 	// printf("%d\n", atoi(num));
