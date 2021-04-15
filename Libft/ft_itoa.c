@@ -6,25 +6,25 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:41:55 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/15 21:51:51 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/16 00:45:03 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int size_int(int n)
+static	int	size_ptr(int n)
 {
 	int		size;
-	int		mod;
-	
+
 	size = 0;
+	if (n <= 0)
+		size++;
 	while (n != 0)
 	{
-		mod = n % 10;
 		size++;
 		n = n / 10;
 	}
-	return (size);
+	return (size + 1);
 }
 
 char	*ft_itoa(int n)
@@ -32,30 +32,25 @@ char	*ft_itoa(int n)
 	long	num;
 	char	*ptr;
 	int		end_ptr;
-	int		mod;
 
 	num = n;
-	if (num < 0)
-		end_ptr = size_int(n) +2;
-	else
-		end_ptr = size_int(n)+1;
-	ptr = (char *)malloc(3);
-	if(!ptr)
+	end_ptr = size_ptr(n);
+	ptr = (char *)malloc(end_ptr);
+	if (!ptr)
 		return (NULL);
-	ptr[0] = '\0';
-	printf("-----%s\n", ptr);
-	end_ptr--;
-	while (n != 0)
-	{
-		mod = n % 10;
-		printf("%d\n", end_ptr);
-		printf("%d\n", mod);
-		ptr[end_ptr] = mod + 48;
-		n = n / 10;
-		end_ptr--;
-	}
+	ptr[--end_ptr] = '\0';
 	if (num < 0)
+	{
 		ptr[0] = '-';
-	printf("%d\n\n", end_ptr);
-	return (ptr);	
+		num = num * -1;
+	}
+	if (num == 0)
+		ptr[0] = '0';
+	while (num != 0)
+	{
+		end_ptr--;
+		ptr[end_ptr] = (num % 10) + '0';
+		num = num / 10;
+	}
+	return (ptr);
 }

@@ -19,8 +19,8 @@ int main (void)
 	// }
 
 	// ----- FT_ITOA -----
-	//int num = -2147483647;
-	int num = 23;
+	//int num = 2147483647;
+	int num = 0;
 	char *num_char;
 	num_char = ft_itoa(num);
 	printf("%s\n", num_char);

@@ -6,13 +6,13 @@
 /*   By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/07 20:52:48 by dalvaro-          #+#    #+#             */
-/*   Updated: 2021/04/15 20:26:13 by dalvaro-         ###   ########.fr       */
+/*   Updated: 2021/04/16 00:45:26 by dalvaro-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	cont_words(char const *s, char c)
+static int	cont_words(char const *s, char c)
 {
 	int		cont;
 
