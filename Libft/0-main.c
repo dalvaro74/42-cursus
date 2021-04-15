@@ -5,15 +5,29 @@
 
 int main (void)
 {
+	
+	// ----- FT_STRSPLIT -----
+	char	s1[] = "cccaaacggggcctt";
+	char	split = 'c';
+	// ft_split(s1,split);
+	char	**prueba;;
+	prueba = ft_split(s1,split);
+	printf("%s\n", prueba[0]);
+	while (*prueba)
+	{
+		printf("%s\n", *prueba);
+		prueba++;
+	}
+	
 	// ----- FT_STRTRIM -----
-	char	s1[] = "ababyaba";
-	char	set[] = "ab";
-	printf("%s\n", ft_strtrim(s1,set));
+	// char	s1[] = "ababyaba";
+	// char	set[] = "ab";
+	// printf("%s\n", ft_strtrim(s1,set));
 
-	char	s2[] = "1234567";
-	printf("%s\n", ft_substr(s2,6,0));
+	// char	s2[] = "1234567";
+	// printf("%s\n", ft_substr(s2,6,0));
 
-	printf("%zu\n", ft_strlen("\0"));
+	// printf("%zu\n", ft_strlen("\0"));
 
 
 	//mcheck(s, strlen("tripouille") + 1); free(s); showLeaks();
