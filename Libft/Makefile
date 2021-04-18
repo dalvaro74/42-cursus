@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/17 03:10:19 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/18 18:31:54 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ SRCS		=	ft_atoi.c\
 				ft_lstdelone.c\
 				ft_lstclear.c\
 				ft_lstiter.c\
-				#ft_lstmap.c
+				ft_lstmap.c
 				
 SRCS_BONUS	=	ft_lstnew.c\
 				ft_lstadd_front.c\
@@ -64,7 +64,7 @@ SRCS_BONUS	=	ft_lstnew.c\
 				ft_lstdelone.c\
 				ft_lstclear.c\
 				ft_lstiter.c\
-				#ft_lstmap.c
+				ft_lstmap.c
 
 OBJS		= $(SRCS:.c=.o)
 OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
