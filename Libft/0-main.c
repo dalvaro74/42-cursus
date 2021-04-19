@@ -7,23 +7,27 @@ int main (void)
 {
 	
 	// ----- FT_STRSPLIT -----
-	// char	s1[] = "cccaaacggggcctt";
-	// char	split = 'c';
-	// char	**prueba;;
-	// prueba = ft_split(s1,split);
-	// printf("%s\n", prueba[0]);
-	// while (*prueba)
-	// {
-	// 	printf("%s\n", *prueba);
-	// 	prueba++;
-	// }
+	char	s1[] = "cccaaacggggcctt";
+	char	split = 'c';
+	char	**prueba;
+	int		cont = 0;
+	prueba = ft_split(s1,split);
+	printf("%s\n", prueba[0]);
+	while (*prueba)
+	{
+		printf("%s\n", *prueba);
+		prueba++;
+	}
+	// while (1)
+	// 	cont++;
+	//system("leaks a.out");
 
 	// ----- FT_ITOA -----
 	//int num = 2147483647;
-	int num = 0;
-	char *num_char;
-	num_char = ft_itoa(num);
-	printf("%s\n", num_char);
+	// int num = 0;
+	// char *num_char;
+	// num_char = ft_itoa(num);
+	// printf("%s\n", num_char);
 	
 	
 	// ----- FT_STRTRIM -----
