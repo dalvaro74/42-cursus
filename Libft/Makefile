@@ -6,7 +6,7 @@
 #    By: dalvaro- <dalvaro-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 19:39:21 by dalvaro-          #+#    #+#              #
-#    Updated: 2021/04/18 18:31:54 by dalvaro-         ###   ########.fr        #
+#    Updated: 2021/04/19 15:55:57 by dalvaro-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,15 +46,6 @@ SRCS		=	ft_atoi.c\
 				ft_strmapi.c\
 				ft_split.c\
 				ft_itoa.c\
-				ft_lstnew.c\
-				ft_lstadd_front.c\
-				ft_lstsize.c\
-				ft_lstlast.c\
-				ft_lstadd_back.c\
-				ft_lstdelone.c\
-				ft_lstclear.c\
-				ft_lstiter.c\
-				ft_lstmap.c
 				
 SRCS_BONUS	=	ft_lstnew.c\
 				ft_lstadd_front.c\
@@ -68,7 +59,7 @@ SRCS_BONUS	=	ft_lstnew.c\
 
 OBJS		= $(SRCS:.c=.o)
 OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
-CC			= cc
+CC			= gcc
 RM			= rm -f
 CFLAGS		= -Wall -Werror -Wextra
 # Use  "ar rcs" instead of "ar rc + ranlib"
@@ -89,7 +80,7 @@ bonus: 		$(NAME) $(OBJS_BONUS)
 all:		$(NAME)
 
 clean:
-			${RM} ${OBJS}
+			${RM} ${OBJS} $(OBJS_BONUS)
 
 fclean: 	clean
 			$(RM) $(NAME)
@@ -101,4 +92,4 @@ so:
 	$(CC) -fPIC -c $(CFLAGS) $(SRCS) 0-main.c
 	gcc -shared -o libft.so $(OBJS) 0-main.o
 
-.PHONY:		clean fclean all re
+.PHONY:		all bonus clean fclean re
